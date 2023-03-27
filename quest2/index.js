@@ -5,6 +5,10 @@ function countFactorial(n) {
   if (n < 0) {
     return -1;
   }
+  //ukončuje funkci při inputu desetiného čísla
+  if (n % 1 !== 0) {
+    return -1;
+  }
   //když je input 0 vrací její faktoriál
   else if (n === 0) {
     return 1;
